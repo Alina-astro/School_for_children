@@ -1,0 +1,44 @@
+@import "../../../assets/styles/vars";
+@font-face {
+  font-family: "Font-main";
+  src: url(../../../assets/fonts/Jura-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  header {
+    @extend %color-header-bg;
+    .wrap-header {
+      max-width: 1440px;
+      margin: 0 auto;
+      width: 100%;
+      height: 18vh;
+      padding: 10px 40px;
+      @extend %color-header-bg;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        height: 100%;
+        img {
+          height: 100%;
+        }
+      }
+      .profile {
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+        font-family: "Font-main";
+        font-size: 30px;
+        a {
+          @extend %menu-link;
+        }
+      }
+    }
+  }
+}
